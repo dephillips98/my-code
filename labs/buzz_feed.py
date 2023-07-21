@@ -6,7 +6,7 @@ while True:
         dir1 = input("you see a long dark hallway. You walk forward and see that you can turn left or right. What do you choose?\nleft/right" )
         if dir1.lower() == 'left':
             input("You see cob webs. Do you continue?\nyes/no")
-            if 
+#            if 
 
 
 
