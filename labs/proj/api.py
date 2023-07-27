@@ -11,8 +11,10 @@ pokemon = results['results']
 #print(pokemon)
 def choice():
     for num in range(2,20,3):
-        print(pokemon[num]["name"])
+        type_dict = {pokemon[num]["name"]}
+        print(type_dict)
 
+    
 
     # TO DO
     # prompt the user to choose three different pokemon
