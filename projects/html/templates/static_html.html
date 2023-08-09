@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
    <head>
-     <title> This page is for somthing <title>
-   <head>
-    <body>
-     <title>email table</title>
     <style>
         table {
             border-collapse: collapse;
@@ -17,7 +13,11 @@
             text-align: left;
         }
     </style>  
-     <thead>
+    <title> This page is for somthing </title>
+    </head>
+    <body>
+     <table>
+        <thead>
             <tr>
                 <th>name</th>
                 <th>mail</th>
@@ -26,8 +26,8 @@
         <tbody>
         {% for person in people %}
             <tr>
-                <td>{{ email.name }}</td>
-                <td>{{ email.mail }}</td>
+                <td>{{ person.name }}</td>
+                <td>{{ person.mail }}</td>
             </tr>
             {% endfor %}
         </tbody>
