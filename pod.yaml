@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wednesday-warmup
+spec:
+  containers:
+  - name: pizzaparty
+    image: registry.gitlab.com/alta3-instructor/tmnt
+    ports: 
+    - name:
+      containerPort: 5055 # we mapped this with the port-forward command
+      protocol: TCP
