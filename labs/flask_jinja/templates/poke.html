@@ -1,6 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-   <body>
-       <h1>{{poke_name}}</h1>
-   </body>
+<head>
+    <title>Pokemon Search</title>
+</head>
+<body>
+    <h1>Pokemon Search</h1>
+    <form method="post">
+        <label for="search_name">Search Pokemon by Name:</label>
+        <input type="text" id="search_name" name="search_name">
+        <button type="submit">Search</button>
+    </form>
+    {% if poke_name and poke_type %}
+        <h2>Pokemon Name: {{ poke_name }}</h2>
+        <h3>Pokemon Type: {{ poke_type }}</h3>
+    {% endif %}
+</body>
 </html>
+
